@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School ERP System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: #1f3c88;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            background: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            border-right: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        nav a {
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        nav a:hover {
+            background: #e8f0fe;
+            color: #1f3c88;
+        }
+        main {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        @media(max-width: 768px) {
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>School Management ERP</h1>
+    <div>User Role: <strong>Super Admin</strong></div>
+</header>
+
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Staff Management</a>
+    <a href="#">Student Information (SIS)</a>
+    <a href="#">Financial Management</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+</nav>
+
+<main>
+    <h2>Dashboard</h2>
+    <div class="dashboard">
+        <div class="card"><h3>Staff Management</h3><p>Manage personnel and payroll.</p></div>
+        <div class="card"><h3>Student System</h3><p>Profiles, grades, and attendance.</p></div>
+        <div class="card"><h3>Financial</h3><p>Billing and expense tracking.</p></div>
+        <div class="card"><h3>Reports</h3><p>Generate insights and analytics.</p></div>
+    </div>
+
+    <footer>
+        © 2026 School ERP System
+    </footer>
+</main>
+
+</body>
+</html>
